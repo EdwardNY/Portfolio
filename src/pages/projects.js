@@ -6,7 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
-
+import xlploreit from "../../public/images/projects/XploreIt.jpeg";
+import ttt from "../../public/images/projects/game.png";
 import proj1 from "../../public/images/projects/clay-theme.png";
 import loading from "../../public/images/articles/GTA6-VICE.gif";
 
@@ -145,10 +146,10 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             className="w-10"
             aria-label="github link"
           >
-            <GithubIcon />
+            <GithubIcon /> 
           </Link>
           <Link
-            href={link}
+            href="https://github.com/EdwardNY/Xploreit"
             className="ml-4 rounded-lg
              bg-dark p-2 px-6 text-lg font-semibold
              sm:px-4 sm:text-base rounded-lg border-2 border-solid bg-dark
@@ -157,8 +158,9 @@ lg:p-8 xs:rounded-2xl  xs:rounded-br-3xl xs:p-4
             md:p-2 md:px-4 md:text-base"
             aria-label="Project link"
           >
-            View Project
+            View Project Github
           </Link>
+         
         </div>
       </div>
     </article>
@@ -209,7 +211,7 @@ const Project = ({ title, type, img, link, tools }) => {
         </Link>
         <div className="flex w-full items-center  justify-between">
           <Link
-            href={link}
+            href="https://github.com/EdwardNY/Xploreit"
             className="rounded-lg
              bg-dark mt-2 px-6 py-2 text-lg font-semibold
              sm:px-4 sm:text-base rounded-lg border-2 border-solid bg-dark
@@ -219,7 +221,7 @@ const Project = ({ title, type, img, link, tools }) => {
             "
             aria-label={title}
           >
-            View Project
+            View Project Github
           </Link>
         </div>
       </div>
@@ -230,49 +232,38 @@ const Project = ({ title, type, img, link, tools }) => {
 export default function Projects() {
   return (
     <>
-      <Head>
-        <title>Projects | By NexTemp</title>
-        <meta
-          name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
-        />
-      </Head>
 
       <TransitionEffect />
       <main
         className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
-          <AnimatedText
-            text="Imagination Transforms the World ✨"
-            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-          />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                summary="Image-centric Gatsby theme for publishers, portfolio, photographers blogs and more."
-                img={proj1}
+                type="Full Stack Development"
+                tools="PHP(Laravel) | Blade | "
+                title="XploreIt"
+                summary="Video streaming platform for educational content, designed to let students watch lessons and actively engage with teachers through an integrated discussion forum."
+                img={xlploreit}
                 date="2023"
                 link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                github="https://github.com/EdwardNY/Xploreit"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                type="Design & Development"
-                tools="HTML | CSS | JavaScript | Gatsby"
-                title="Clay - Gatsby Theme"
-                img={proj1}
+                type="Game"
+                tools="C"
+                title="Tic Tac Toe"
+                img={ttt}
                 date="2023"
                 link="/projects/clay-gatsby-theme"
-                github="https://travislord.xyz/projects/clay-gatsby-theme"
+                github="https://github.com/EdwardNY/Tic-Tac-Toe"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
-              <Project
+              {/* <Project
                 type="Design & Development"
                 tools="HTML | CSS | JavaScript | Gatsby"
                 title="Clay - Gatsby Theme"
@@ -280,7 +271,7 @@ export default function Projects() {
                 date="2023"
                 link="/projects/clay-gatsby-theme"
                 github="https://travislord.xyz/projects/clay-gatsby-theme"
-              />
+              /> */}
             </div>
           </div>
 
@@ -288,25 +279,13 @@ export default function Projects() {
             <ul className="flex flex-col items-center relative pt-16">
               <Article
                 title="Adding more soon, thanks for the interest!"
-                img={loading}
                 time="1 min read"
                 date=""
-                link="https://github.com/lilxyzz/"
+                link="https://github.com/EdwardNY"
               />
             </ul>
 
             <div className="mt-2 flex items-center justify-between gap-3 grid-cols-2">
-              <Link
-                href="/articles/"
-                target={"_self"}
-                className={`flex items-center rounded-lg border-2 border-solid bg-light p-2.5 px-6 text-lg font-semibold
-            capitalize text-dark hover:border-light hover:bg-dark hover:text-light 
-            dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark
-            md:p-2 md:px-4 md:text-base
-             `}
-              >
-                View Articles
-              </Link>
               <Link
                 href="/about/"
                 target={"_self"}

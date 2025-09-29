@@ -56,23 +56,39 @@ const Experience = () => {
           style={{ scaleY: scrollYProgress }}
         />
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2 text-justify">
           <Details
-            position="Developer"
-            company="Stellar Innovations"
-            time="2020 - 2024"
-            address="200 Innovations st"
-            companyLink="https://github.com/lilxyzz/clay-theme"
-            work="At Stellar Innovations, I serve as a web developer, where I play a crucial role in designing and implementing cutting-edge web solutions. My responsibilities include developing responsive and high-performance websites and applications using technologies such as HTML, CSS, JavaScript, React, and Node.js. I collaborate closely with cross-functional teams to ensure our projects meet the highest standards of functionality and user experience. One of my key achievements at Stellar Innovations has been leading the development of a comprehensive e-commerce platform that significantly enhanced our client's online presence and sales. My work is driven by a passion for continuous learning and innovation, always striving to push the boundaries of what's possible in web development."
+            position="Reserach Assistant"
+            company="BINUS"
+            time="| Aug 2024 - Sept 2024"
+            work="At BINUS University, I contributed as a Research Assistant on a project focused on applying artificial intelligence for image classification. My role involved:
+                    Testing and validating code to ensure model accuracy and performance, 
+                    Analyzing results from experiments to improve model evaluation, 
+                    Collaborating with lecturers and senior students in refining research methods, 
+                    Contributing to the writing of the research paper documenting our findings.
+                    This experience allowed me to strengthen my technical skills , problem-solving, and research writing, while also learning how to collaborate effectively in an academic research setting."
           />
 
           <Details
-            position="Rad Tester"
-            company="Vault Technologies"
-            time="2018 - 2020"
-            address="404 Tech st"
-            companyLink="https://github.com/lilxyzz/holo-theme"
-            work="At Vault Technologies, I worked as a RAD (Rapid Application Development) Tester, where I was responsible for ensuring the quality and functionality of our software applications during the development process. My role involved designing and executing test plans, identifying and documenting bugs, and working closely with developers to resolve issues quickly. This position required a deep understanding of the software development lifecycle and a keen eye for detail to ensure our applications met the highest standards of performance and reliability. My contributions at Vault Technologies helped streamline our development processes and significantly improved the overall quality of our software products."
+            position="Marketing Team"
+            company="BINUS"
+            time="| April 2024 - Jun 2025"
+            work="As part of the Marketing Team, I contributed to promoting BINUS University to prospective students and schools through a variety of outreach activities. My responsibilities included:
+                  Delivering presentations to public and private schools across Jawa Barat,
+                  Coordinating campus visit events, ensuring a smooth experience for visiting schools,
+                  Representing the university on social media as on-screen talent for promotional content.
+                  Through this role, I developed strong skills in public speaking, event coordination, and communication, while gaining hands-on experience in engaging with diverse audiences."
+          />
+          <Details
+            position="Freshmen Leader"
+            company="BINUS"
+            time="| June 2024 - Sept 2025"
+            work="As a Freshmen Leader, I supported first-year students in transitioning into university life and becoming familiar with BINUS University environment. My responsibilities included:
+                  Guiding and mentoring a group of 10 freshmen throughout their first semester,
+                  Assisting students in adjusting to campus life and academic expectations,
+                  Monitoring attendance and task completion, ensuring students stayed on track,
+                  Delivering presentations alongside fellow Freshmen Leaders to the entire freshmen class.
+                  This role allowed me to strengthen my leadership, communication, and organizational skills, while also building meaningful connections with new students."
           />
         </ul>
       </div>
@@ -88,17 +104,7 @@ const Experience = () => {
         >
           View Projects
         </Link>
-        <Link
-          href="/articles/"
-          target={"_self"}
-          className={`flex items-center rounded-lg border-2 border-solid bg-dark p-2.5 px-6 text-lg font-semibold
-            capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-            md:p-2 md:px-4 md:text-base
-             `}
-        >
-          View Articles
-        </Link>
+
       </div>
     </div>
   );

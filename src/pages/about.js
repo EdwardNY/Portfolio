@@ -11,6 +11,9 @@ import TransitionEffect from "@/components/TransitionEffect";
 
 
 function AnimatedNumberFramerMotion({ value }) {
+  if (value === "infinity") {
+    return <span>∞</span>;
+  }
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
@@ -51,34 +54,30 @@ export default function About() {
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
             <div
               className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
-            md:col-span-8 " 
+            md:col-span-8 "
             >
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <h1 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 BIOGRAPHY
-              </h2>
-              <p className="font-medium ">
-                I'm Riley, a dedicated web developer at Stellar Innovations,
-                where I specialize in creating dynamic and user-centric web
-                experiences. With over a decade of experience in the industry, I
-                have honed my skills in both front-end and back-end
-                technologies, allowing me to deliver responsive and
-                high-performance websites and applications.
+              </h1>
+              <p className="font-medium text-justify">
+                Hi, my name is Edward Yustian. I am a Computer Science student specializing in Cybersecurity,
+                with a strong interest in ethical hacking, penetration testing, and network security.
+
+                Over the past year, I have built hands-on experience using tools such as Wireshark,
+                nmap, Burp Suite, and Autopsy. I actively practice on platforms like TryHackMe and HackTheBox,
+                where I explore real-world attack and defense techniques.
               </p>
-              <p className="my-4 font-medium">
-                At Stellar Innovations, I've had the opportunity to work on
-                numerous high-profile projects that have challenged and expanded
-                my expertise. My technical skill set includes HTML, CSS,
-                JavaScript, React, and Node.js, among other technologies. One of
-                my notable projects involved developing a comprehensive
-                e-commerce platform that streamlined the user experience and
-                significantly boosted the client's sales. Another project I’m
-                particularly proud of was creating an interactive web
-                application for a major event, which received widespread acclaim
-                for its intuitive design and seamless performance.
+              <p className="my-4 font-medium text-justify">
+                I enjoy learning through hands-on experience, especially when exploring security tools,
+                solving challenges, and applying theoretical knowledge in practical scenarios.
+                My goal is to develop into a security professional who not only
+                identifies risks but also helps build safer systems.
+
+                I am currently seeking a Cybersecurity Internship opportunity
+                where I can apply my skills, gain practical industry experience,
+                and contribute to protecting digital environments.
               </p>
-              <p className="my-4 font-medium">
-                P.s I'm a big fan of anime and not a real person ✌️.
-              </p>
+
             </div>
             <div
               className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
@@ -95,7 +94,7 @@ export default function About() {
                 className="h-auto w-full rounded-2xl border-2 border-solid border-dark"
                 priority={true}
                 src={profile}
-                alt="Travis Lord"
+                alt="profile"
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
@@ -107,41 +106,41 @@ export default function About() {
             >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={1461} />+
+                  <AnimatedNumberFramerMotion value={1000} />+
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Days of Coding
+                  Hours of Exploration
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={500} />
+                  <AnimatedNumberFramerMotion value={"infinity"} />
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Made
+                  Late Night Debug
                 </h3>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={499} />
+                  <AnimatedNumberFramerMotion value={1} />
                 </span>
                 <h3
                   className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
                 xl:text-center md:text-lg sm:text-base xs:text-sm"
                 >
-                  Bugs Crushed
+                  Big Dreams
                 </h3>
               </div>
             </div>
-            
+
           </div>
 
           <Skills />
