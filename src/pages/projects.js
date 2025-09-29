@@ -247,7 +247,7 @@ export default function Projects() {
                 summary="Video streaming platform for educational content, designed to let students watch lessons and actively engage with teachers through an integrated discussion forum."
                 img={xlploreit}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link="https://github.com/EdwardNY/Xploreit"
                 github="https://github.com/EdwardNY/Xploreit"
               />
             </div>
@@ -258,7 +258,7 @@ export default function Projects() {
                 title="Tic Tac Toe"
                 img={ttt}
                 date="2023"
-                link="/projects/clay-gatsby-theme"
+                link="https://github.com/EdwardNY/Tic-Tac-Toe"
                 github="https://github.com/EdwardNY/Tic-Tac-Toe"
               />
             </div>
