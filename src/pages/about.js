@@ -1,14 +1,14 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../../public/images/profile/Riley.png";
+import profile from "../../public/images/profile/profile.jpeg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
-import { HireMe2 } from "@/components/HireMe2";
+
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);
@@ -37,28 +37,21 @@ function AnimatedNumberFramerMotion({ value }) {
 export default function About() {
   return (
     <>
-      <Head>
-        <title>About NexTemp</title>
-        <meta
-          name="description"
-          content="NexTemp, A open-source portfolio theme built with Nextjs"
-        />
-      </Head>
 
       <TransitionEffect />
       <main
         className={`flex  w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout className="pt-16">
-          <AnimatedText
+          {/* <AnimatedText
             text="Let Passion Lead Your Purpose 🔥"
             className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
-          />
+          /> */}
 
-          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
             <div
               className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
-            md:col-span-8"
+            md:col-span-8 " 
             >
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 BIOGRAPHY
@@ -148,7 +141,7 @@ export default function About() {
                 </h3>
               </div>
             </div>
-            <HireMe2 />
+            
           </div>
 
           <Skills />

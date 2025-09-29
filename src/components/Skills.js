@@ -41,12 +41,12 @@ const Skills = () => {
         dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:text-xs xs:p-2
         "
         >
-          Web
+            Cybersec
         </motion.div>
 
-        <Skill name="HTML" x="-20vw" y="2vw" />
-        <Skill name="Tailwind" x="-5vw" y="-10vw" />
-        <Skill name="JavaScript" x="20vw" y="6vw" />
+        <Skill name="Nmap" x="-20vw" y="2vw" />
+        <Skill name="Autopsy" x="-5vw" y="-10vw" />
+        <Skill name="FTK Imager" x="20vw" y="6vw" />
         <Skill name="TypeScript" x="0vw" y="12vw" />
         <Skill name="Next.js" x="-20vw" y="-15vw" />
         <Skill name="Gatsby" x="15vw" y="-12vw" />
