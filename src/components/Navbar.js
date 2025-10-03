@@ -149,14 +149,14 @@ const Navbar = () => {
             <DevIcon />
           </motion.a> */}
 
-          <motion.a
+          {/* <motion.a
             target={"_blank"}
             className="w-7 mx-3"
             href="https://dev.to/lilxyzz"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             aria-label="My Dev.to profile"
-          ></motion.a>
+          ></motion.a> */}
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -207,12 +207,12 @@ const Navbar = () => {
               href="/articles"
               title="Articles"
             /> */}
-            <CustomMobileLink
+            {/* <CustomMobileLink
               toggle={handleClick}
               className="ml-4 lg:m-0 lg:my-2"
               href="/contact"
               title="Contact"
-            />
+            /> */}
           </nav>
           <nav
             className="flex items-center justify-center  mt-2
@@ -221,7 +221,7 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 mr-3"
-              href="https://github.com/lilxyzz"
+              href="https://github.com/EdwardNY"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="Checkout my Github profile"
@@ -232,14 +232,14 @@ const Navbar = () => {
             <motion.a
               target={"_blank"}
               className="w-6 mx-3 bg-light rounded-full"
-              href="https://medium.com/@travis.lord"
+              href="https://www.linkedin.com/in/edwardnathanaelyustian/"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              aria-label="Checkout my Medium profile"
+              aria-label="Checkout my LinkedIn profile"
             >
-              <MediumIcon />
+              <LinkedInIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               target={"_blank"}
               className="w-6 mx-3"
               href="https://dev.to/lilxyzz"
@@ -256,7 +256,7 @@ const Navbar = () => {
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               aria-label="My Dev.to profile"
-            ></motion.a>
+            ></motion.a> */}
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
